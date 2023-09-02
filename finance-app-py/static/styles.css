@@ -1,0 +1,35 @@
+/* static/styles.css */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Adicione seus estilos personalizados aqui */
+
+/* Exemplo de estilo personalizado */
+.destaque {
+    color: #FF5733;
+    font-weight: bold;
+}
+
+/* static/styles.css */
+
+/* Exemplo de estilo personalizado */
+.destaque {
+    color: #FF5733;
+    font-weight: bold;
+}
+
+/* Exemplo de estilo para um botão personalizado */
+.botao-personalizado {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.botao-personalizado:hover {
+    background-color: #0056b3;
+}

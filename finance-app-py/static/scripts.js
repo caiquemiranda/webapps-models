@@ -1,6 +1,4 @@
 // static/scripts.js
-import { DateTime } from 'luxon';
-
 document.addEventListener("DOMContentLoaded", () => {
     fetch('/data')
         .then(response => response.json())
@@ -8,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const ctx = document.getElementById('stockChart').getContext('2d');
 
             // Mapeia as datas para o formato correto (luxon)
-            const labels = data.labels.map(date => DateTime.fromISO(date));
+            const labels = data.labels.map(date => luxon.DateTime.fromISO(date));
 
             new Chart(ctx, {
                 type: 'line',

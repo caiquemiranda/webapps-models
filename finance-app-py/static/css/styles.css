@@ -1,0 +1,34 @@
+/* static/css/styles.css */
+
+/* Exemplo de estilo personalizado para o container */
+.meu-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Mais estilos personalizados */
+}
+
+/* Exemplo de estilo personalizado para o título */
+.meu-titulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007BFF;
+    /* Mais estilos personalizados */
+}
+
+/* Exemplo de estilo personalizado para o botão */
+.meu-botao {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.meu-botao:hover {
+    background-color: #0056b3;
+}

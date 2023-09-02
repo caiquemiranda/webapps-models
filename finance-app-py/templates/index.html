@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gráfico de Ações Petrobras</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="/static/css/styles.css" rel="stylesheet">
+
 </head>
-<body>
-    <div class="container mx-auto mt-8">
-        <h1 class="text-2xl font-bold mb-4">Gráfico de Ações da Petrobras</h1>
-        <canvas id="stockChart"></canvas>
+<body class="bg-gray-100 font-sans">
+    <div class="meu-container">
+        <div class="bg-white rounded-lg shadow-lg p-8 w-full max-w-md">
+            <h1 class="meu-titulo">Gráfico de Ações da Petrobras</h1>
+            <p class="text-gray-600 text-lg mt-4">Acompanhe o histórico de preços das ações da Petrobras.</p>
+            <img src="data:image/png;base64,{{ img_base64 }}" alt="Gráfico de Ações" class="mt-6 rounded-lg shadow-md">
+            <a href="/plot" class="meu-botao">Ver Gráfico Separadamente</a>
+
+        </div>
     </div>
-    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>
 </html>
