@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de Ações</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container mx-auto mt-8">
+        <h1 class="text-2xl font-bold mb-4">Gráfico de Ações</h1>
+        <div id="chart"></div>
+    </div><!-- templates/index.html -->
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gráfico de Ações Petrobras</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    
+    <body>
+        <div class="container mx-auto mt-8">
+            <h1 class="text-2xl font-bold mb-4">Gráfico de Ações da Petrobras</h1>
+            <canvas id="stockChart"></canvas>
+        </div>
+        <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    </body>
+    
+    </html>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+
+</html>
