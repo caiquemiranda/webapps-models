@@ -1,14 +1,19 @@
 // static/scripts.js
+import { DateTime } from 'luxon';
+
 document.addEventListener("DOMContentLoaded", () => {
     fetch('/data')
         .then(response => response.json())
         .then(data => {
             const ctx = document.getElementById('stockChart').getContext('2d');
 
+            // Mapeia as datas para o formato correto (luxon)
+            const labels = data.labels.map(date => DateTime.fromISO(date));
+
             new Chart(ctx, {
                 type: 'line',
                 data: {
-                    labels: data.labels,
+                    labels: labels,
                     datasets: [{
                         label: 'Preço de Fechamento (R$)',
                         data: data.values,

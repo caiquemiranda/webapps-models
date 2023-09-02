@@ -14,8 +14,8 @@ def get_stock_data():
     data = pd.read_csv('data/stock.csv')
 
     # Convertemos os dados em um formato adequado para enviar para o JavaScript
-    labels = data['Data'].tolist()
-    values = data['PrecoFechamento'].tolist()
+    labels = data['Date'].tolist()
+    values = data['Close'].tolist()
     
     return {
         'labels': labels,
